@@ -1,0 +1,775 @@
+/* ===== ARREGLOS PARA HERO SECTION EN MÓVIL ===== */
+
+/* Hero section responsive */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  min-height: 500px; /* altura mínima para pantallas muy pequeñas */
+  background: url('images/portada2.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 80px;
+  padding: 20px; /* padding para que no se pegue a los bordes */
+}
+
+/* Ajustes de tipografía responsiva para el hero */
+.hero-title .old-font {
+  font-family: 'Old Standard TT', serif;
+  font-weight: 700;
+  font-size: 6rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.hero-title .new-font {
+  font-family: "Pacifico", cursive;
+  font-weight: 700;
+  font-size: 8rem;
+  color: #F7C600;
+  line-height: 0.9;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin-bottom: 1rem;
+}
+
+.hero-section p.lead {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-size: 5rem;
+  color: #f8f8f8;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+/* MEDIA QUERIES PARA DIFERENTES TAMAÑOS */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 1024px) {
+  .hero-title .old-font {
+    font-size: 4.5rem;
+  }
+  
+  .hero-title .new-font {
+    font-size: 6rem;
+  }
+  
+  .hero-section p.lead {
+    font-size: 3.5rem;
+  }
+}
+
+/* Tablets pequeñas */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 80vh;
+    min-height: 450px;
+    padding: 15px;
+  }
+  
+  .hero-section .content {
+    max-width: 90%;
+    padding: 15px;
+  }
+  
+  .hero-title .old-font {
+    font-size: 3rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .hero-title .new-font {
+    font-size: 4rem;
+    line-height: 0.9;
+    margin-bottom: 0.8rem;
+  }
+  
+  .hero-section p.lead {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-section .btn {
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+  }
+}
+
+/* Móviles grandes */
+@media (max-width: 576px) {
+  .hero-section {
+    height: 70vh;
+    min-height: 400px;
+    padding: 10px;
+  }
+  
+  .hero-section .content {
+    max-width: 95%;
+    padding: 10px;
+  }
+  
+  .hero-title .old-font {
+    font-size: 2.2rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .hero-title .new-font {
+    font-size: 2.8rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-section p.lead {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.3;
+  }
+  
+  .hero-section .btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.3rem;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 375px) {
+  .hero-section {
+    height: 65vh;
+    min-height: 350px;
+  }
+  
+  .hero-title .old-font {
+    font-size: 1.8rem;
+  }
+  
+  .hero-title .new-font {
+    font-size: 2.3rem;
+  }
+  
+  .hero-section p.lead {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-section .btn {
+    font-size: 0.85rem;
+    padding: 0.5rem 1.2rem;
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+/* Ajuste adicional para orientación horizontal en móviles */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero-section {
+    height: 100vh;
+    min-height: 300px;
+  }
+  
+  .hero-title .old-font {
+    font-size: 2.5rem;
+  }
+  
+  .hero-title .new-font {
+    font-size: 3.2rem;
+  }
+  
+  .hero-section p.lead {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Botón hero */
+.hero-section .btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 0.8rem 2rem;
+}
+
+/* Navbar personalizada */
+.navbar {
+  background-color: #CF6208 !important; /* turquesa suave */
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #fff !important; /* texto blanco */
+  font-weight: 500;
+}
+
+/* Hover para los links */
+.navbar .nav-link:hover {
+  color: #f1f1f1 !important; /* un blanco más suave */
+  text-decoration: underline;
+}
+
+/* Hamburguesa (menú móvil) en blanco */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-toggler-icon {
+  filter: invert(1); /* hace el ícono blanco */
+}
+
+/* Espaciado general para todas las secciones */
+section {
+  margin-bottom: 80px; /* Espacio entre secciones */
+  padding-top: 60px;   /* Espacio interno superior */
+  padding-bottom: 60px; /* Espacio interno inferior */
+}
+
+/* Sección nosotros con espaciado extra */
+#nosotros {
+  margin-bottom: 100px;
+}
+
+/* Tarjetas pastel */
+.pastel-card {
+  background-color: #FFF9DB; /* amarillo pastel muy suave */
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  margin-bottom: 30px; /* Espacio entre tarjetas */
+}
+
+.pastel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.pastel-card .card-title {
+  font-family: 'Old Standard TT', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.pastel-card .card-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Fondo de sección en naranja pastel con espaciado */
+.schedule-section {
+  background-color: #FFE5B4; /* naranja pastel suave */
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* Tabla personalizada */
+.schedule-table {
+  background-color: #FAF9F6; /* blanco sucio pastel */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-top: 40px; /* Espacio desde el título */
+}
+
+.schedule-table th {
+  background-color: #FFD39B; /* un naranja pastel más intenso */
+  color: #000;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.schedule-table td {
+  color: #000;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.schedule-table tr:nth-child(even) {
+  background-color: #FDFCF9; /* tono muy suave para alternar */
+}
+
+/* ---- EQUIPO con espaciado mejorado ---- */
+#equipo {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.team-container {
+  margin-top: 50px; /* Espacio desde el título */
+  gap: 40px !important; /* Más espacio entre tarjetas del equipo */
+}
+
+.card-team {
+  width: 450px;  /* más ancho */
+  height: 650px; /* mucho más alto */
+  border-radius: 25px;
+  overflow: hidden; /* la imagen no se sale */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  cursor: pointer;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 40px; /* Espacio entre tarjetas en móvil */
+}
+
+.card-team img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* la imagen llena toda la tarjeta */
+  display: block;
+  border-radius: 25px;
+}
+
+.card-team h3, 
+.card-team p {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.8);
+  text-align: center;
+  padding: 0 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Nombre */
+.card-team h3 {
+  bottom: 80px;
+  font-size: 2rem; /* más grande */
+  font-weight: 700;
+}
+
+/* Descripción */
+.card-team p {
+  bottom: 30px;
+  font-size: 1.2rem;
+}
+
+/* Hover más llamativo */
+.card-team:hover {
+  box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+  transform: rotateX(5deg) rotateY(5deg);
+}
+
+/* Sección contacto con espaciado */
+#contacto {
+  margin-top: 80px;
+  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Footer con separación */
+footer {
+  margin-top: 60px;
+}
+
+/* Títulos de sección con más espacio */
+section h2 {
+  margin-bottom: 50px !important; /* Más espacio después de los títulos */
+  margin-top: 20px;
+}
+
+/* Espaciado responsivo para móviles */
+@media (max-width: 768px) {
+  section {
+    margin-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  /* Líneas más pequeñas en móvil */
+  section::after {
+    width: 150px;
+    bottom: -40px;
+  }
+  
+  section:nth-child(even)::after {
+    width: 100px;
+  }
+  
+  .hero-section::after {
+    width: 200px;
+    bottom: -40px;
+  }
+  
+  .schedule-section {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  .schedule-section::after {
+    width: 180px;
+    bottom: -40px;
+  }
+  
+  #equipo {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  #equipo::after {
+    width: 120px;
+    bottom: -50px;
+  }
+  
+  #equipo::before {
+    bottom: -35px;
+    font-size: 8px;
+  }
+  
+  .hero-section {
+    margin-bottom: 80px;
+  }
+  
+  #contacto {
+    margin-top: 80px;
+  }
+}
+
+/* ------------------ OPINIONES ------------------ */
+/* Slider horizontal */
+
+#opiniones {
+  padding: 6rem 2rem; 
+  border-top: 1px solid #ccc;  
+  border-bottom: 1px solid #ccc; 
+  background-color: #FFF9DB;;
+}
+.opiniones-slider {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+}
+
+.opiniones-slider::-webkit-scrollbar {
+  height: 8px;
+}
+.opiniones-slider::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.opinion-card {
+  flex: 0 0 300px;
+  scroll-snap-align: start;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.opinion-card h5 {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+.opinion-card small {
+  display: block;
+  margin-top: 5px;
+}
+
+/* ------------------ SECCIÓN MÁQUINAS ------------------ */
+#maquinas {
+  padding: 6rem 2rem; 
+  border-top: 1px solid #ccc;  
+  border-bottom: 1px solid #ccc; 
+}
+
+#maquinas h2 {
+  font-family: 'Old Standard TT', serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Carrusel horizontal tipo equipo */
+.machine-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 3rem;  /* más espacio entre tarjetas */
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+}
+
+.machine-carousel::-webkit-scrollbar {
+  height: 10px;
+}
+
+.machine-carousel::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.machine-card {
+  flex: 0 0 auto; /* no se estira */
+  width: 400px;   /* ancho más grande */
+  height: 500px;  /* alto mayor */
+  border-radius: 25px;
+  background-color: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.machine-card img {
+  width: 100%;
+  height: 350px;     /* imagen grande */
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.machine-card p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.machine-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+}
+
+
+/* Contact section - Diseño minimalista con tonos pastel */
+.contact-section {
+  background: linear-gradient(135deg, #fefaf5 0%, #fff9f0 100%);
+  position: relative;
+}
+
+.contact-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ffcc99, #ffe066, #ffd699);
+  opacity: 0.6;
+}
+
+/* Tipografía limpia y minimalista */
+.contact-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: #2d2d2d;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.contact-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 1px;
+  background: linear-gradient(90deg, #ffcc99, #ffe066);
+}
+
+.contact-section p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Info de contacto minimalista */
+.contact-info {
+  background: rgba(255, 230, 102, 0.08);
+  border-left: 3px solid #ffe066;
+  padding: 1.2rem;
+  margin: 1.5rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.contact-info p {
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.contact-info strong {
+  color: #cc7a00;
+  font-weight: 400;
+}
+
+.contact-info a {
+  color: #ff9933;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-info a:hover {
+  color: #cc7a00;
+}
+
+/* Botón WhatsApp minimalista */
+.btn-success {
+  background: linear-gradient(135deg, #ffcc99, #ffe066);
+  border: none;
+  color: #666;
+  font-weight: 400;
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(255, 204, 153, 0.3);
+}
+
+.btn-success:hover {
+  background: linear-gradient(135deg, #ffe066, #ffcc99);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 204, 153, 0.4);
+  color: #555;
+}
+
+/* Formulario minimalista */
+.form-label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #666;
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-control {
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  padding: 0.75rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  background: rgba(255, 255, 255, 0.7);
+  transition: all 0.2s ease;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border-color: #ffe066;
+  box-shadow: 0 0 0 0.1rem rgba(255, 230, 102, 0.25);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.form-control::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Botón enviar minimalista */
+.btn-primary {
+  background: linear-gradient(135deg, #ff9933, #ffcc99);
+  border: none;
+  color: white;
+  font-weight: 400;
+  padding: 0.7rem 2rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(255, 153, 51, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.85rem;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #ffcc99, #ff9933);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 153, 51, 0.4);
+}
+
+/* Mapa con diseño minimalista */
+.map-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(255, 204, 153, 0.15);
+  border: 1px solid rgba(255, 230, 102, 0.2);
+  position: relative;
+}
+
+.map-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #ffcc99, #ffe066, #ffd699);
+  z-index: 1;
+}
+
+.map-wrapper iframe {
+  filter: grayscale(20%) contrast(1.1) brightness(1.05);
+}
+
+/* Validación del formulario con colores pastel */
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+  border-color: #ffb3b3;
+  background: rgba(255, 179, 179, 0.1);
+}
+
+.was-validated .form-control:valid,
+.form-control.is-valid {
+  border-color: #b3e6b3;
+  background: rgba(179, 230, 179, 0.1);
+}
+
+.invalid-feedback {
+  color: #ff6b6b;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+/* Texto pequeño al final */
+.text-muted {
+  color: #999 !important;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .map-wrapper { 
+    height: 300px; 
+    margin-top: 2rem;
+  }
+  
+  .contact-section h2 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  
+  .contact-section h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .contact-info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-section {
+    padding: 2rem 0;
+  }
+  
+  .btn-success, .btn-primary {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
